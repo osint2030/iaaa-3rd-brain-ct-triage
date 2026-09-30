@@ -1,0 +1,19 @@
+# Core deep learning
+torch>=2.0
+segmentation-models-pytorch
+
+# DICOM handling
+pydicom
+gdcm
+pylibjpeg
+pylibjpeg-libjpeg
+
+# Data / scientific computing
+numpy
+pandas
+scipy
+scikit-learn
+opencv-python
+
+# Visualization (notebook only, not required by submission/submission.py)
+matplotlib

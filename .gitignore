@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Competition data -- never commit raw patient imaging data.
+# (Also a likely data-use-agreement violation for a public repo.)
+data/
+*.dcm
+
+# Large generated artifacts not meant to be tracked in git history.
+*.zip
+logs/*.csv
+audits/
+
+# Environment
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store

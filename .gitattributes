@@ -1,0 +1,7 @@
+# Git LFS: track large model checkpoint files instead of committing them
+# directly. Run `git lfs install` once per machine before the first commit
+# that touches these paths.
+checkpoints/**/*.pt filter=lfs diff=lfs merge=lfs -text
+checkpoints/**/*.pth filter=lfs diff=lfs merge=lfs -text
+checkpoints/**/*.ckpt filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
