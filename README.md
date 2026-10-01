@@ -11,6 +11,8 @@ decision.
 multiple-instance-learning baseline). The story behind that number is in
 [Engineering Journey & Key Findings](#engineering-journey--key-findings).
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/osint2030/iaaa-3rd-brain-ct-triage/blob/main/notebooks/IAAA_Brain_CT_Triage_MASTER.ipynb)
+
 ## Table of Contents
 - [Problem](#problem)
 - [Approach](#approach)
@@ -209,6 +211,14 @@ output CSV has `series_id` plus the seven intermediates.
 **Full walkthrough.** Open `notebooks/IAAA_Brain_CT_Triage_MASTER.ipynb`. It is
 written for Google Colab and expects the competition data to be available from
 Google Drive (see Section 1 and Section 2 for setup).
+
+## Tests
+
+Weight-free regression tests cover the per-slice aggregation logic (including
+the noisy-OR fracture bug described above):
+
+    pip install -r requirements-dev.txt
+    pytest -q
 
 ## Tech Stack
 
