@@ -1,12 +1,14 @@
 # Core deep learning
-torch>=2.0
+torch
+torchvision
 segmentation-models-pytorch
 
 # DICOM handling
 pydicom
-gdcm
 pylibjpeg
 pylibjpeg-libjpeg
+# Optional: if pydicom reports it cannot decode some compressed pixel data, also
+# install python-gdcm (not listed by default: wheels may be missing for newer Python).
 
 # Data / scientific computing
 numpy
@@ -15,5 +17,8 @@ scipy
 scikit-learn
 opencv-python
 
-# Visualization (notebook only, not required by submission/submission.py)
+# Visualization (notebook only, not needed by submission/submission.py)
 matplotlib
+
+# NOTE: versions are intentionally unpinned here. Generate a pinned copy from
+# the environment you validated in (see the freeze command in the chat/README).
